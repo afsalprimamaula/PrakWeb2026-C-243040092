@@ -30,7 +30,7 @@ const PROFIL = {
   alias:      'El Sal Fring',
   npm:        '243040092',
   angkatan:   '2024',
-  semester:   '3',
+  semester:   '5',
   ipk:        '3.87',
   prodi:      'Teknik Informatika',
   univ:       'Universitas Pasundan',
@@ -466,7 +466,7 @@ function HeroSection({ onHubungi }) {
                 {[
                   { icon: <FiUser />, label: 'Nama Lengkap', value: PROFIL.nama },
                   { icon: <HiOutlineAcademicCap />, label: 'NPM', value: PROFIL.npm, mono: true },
-                  { icon: <FiStar />, label: 'Angkatan', value: `${PROFIL.angkatan} · Sem. ${PROFIL.semester}` },
+                  { icon: <FiStar />, label: 'Angkatan', value: `${PROFIL.angkatan} · Semester ${PROFIL.semester}` },
                   { icon: <FiAward />, label: 'IPK / IP', value: `${PROFIL.ipk} / 4.00`, highlight: true },
                   { icon: <FiCode />, label: 'Prodi', value: `${PROFIL.prodi}` },
                   { icon: <HiOutlineOfficeBuilding />, label: 'Universitas', value: PROFIL.univ },
