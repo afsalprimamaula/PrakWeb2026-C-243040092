@@ -1,0 +1,13 @@
+/* src/index.css */
+/* Dikosongkan sesuai instruksi Langkah 1 Modul 2 agar gaya bawaan Vite tidak mengganggu */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F9FAFB;
+  font-family: Arial, sans-serif;
+  color: #1F2937;
+}

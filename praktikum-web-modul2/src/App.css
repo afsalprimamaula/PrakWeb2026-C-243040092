@@ -1,0 +1,229 @@
+/* src/App.css */
+/* Sesuai Langkah 1 Modul 2 Praktikum Web */
+
+.wadah {
+  max-width: 640px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #1F2937;
+}
+
+.judul {
+  color: #1B365D;
+  margin-bottom: 4px;
+}
+
+.subjudul {
+  color: #6B7280;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.kartu {
+  background: #FFFFFF;
+  border: 1px solid #D0D7DE;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.kartu h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #1B365D;
+}
+
+.baris {
+  display: flex;
+  gap: 8px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.select {
+  padding: 10px;
+  border: 1px solid #D0D7DE;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #FFFFFF;
+}
+
+.tombol {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #1B365D;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tombol:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.tombol:disabled {
+  background: #9CA3AF;
+  cursor: not-allowed;
+}
+
+.tombol-merah {
+  background: #DC2626;
+}
+
+.tombol-kecil {
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.daftar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.item span {
+  flex: 1;
+}
+
+.selesai {
+  text-decoration: line-through;
+  color: #9CA3AF;
+}
+
+.kosong {
+  color: #6B7280;
+  text-align: center;
+  font-style: italic;
+  padding: 16px 0;
+}
+
+.galat {
+  color: #DC2626;
+  font-size: 13px;
+  margin: 6px 0 0;
+}
+
+.ringkasan {
+  font-size: 14px;
+  color: #374151;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========================================================
+   Gaya Tambahan untuk Tugas 1, 2, dan 3 (Evaluasi Kemampuan)
+   ======================================================== */
+
+/* Tugas 1: Filter Tombol */
+.filter-group {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.tombol-filter {
+  padding: 6px 14px;
+  border: 1px solid #D0D7DE;
+  border-radius: 20px;
+  background: #F3F4F6;
+  color: #4B5563;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tombol-filter:hover {
+  background: #E5E7EB;
+}
+
+.tombol-filter.aktif {
+  background: #1B365D;
+  color: #FFFFFF;
+  border-color: #1B365D;
+}
+
+/* Tugas 3: Catatan Keuangan Mini */
+.pemasukan {
+  color: #16A34A;
+  font-weight: bold;
+}
+
+.pengeluaran {
+  color: #DC2626;
+  font-weight: bold;
+}
+
+.saldo-box {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saldo-label {
+  font-size: 14px;
+  color: #64748B;
+  font-weight: 600;
+}
+
+.saldo-nominal {
+  font-size: 22px;
+  font-weight: bold;
+  color: #1B365D;
+}
+
+/* Tab Navigasi Modul (Antara Tugas Praktikum & Catatan Keuangan) */
+.nav-modul {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #E5E7EB;
+  padding-bottom: 4px;
+}
+
+.tab-modul-btn {
+  padding: 10px 18px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  color: #6B7280;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  transition: all 0.2s;
+}
+
+.tab-modul-btn:hover {
+  color: #1B365D;
+}
+
+.tab-modul-btn.aktif {
+  color: #1B365D;
+  border-bottom: 3px solid #1B365D;
+  background-color: #EEF2F6;
+}
