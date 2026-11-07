@@ -1,8 +1,8 @@
-// src/FormTransaksi.jsx
+// src/components/finance/FormKeuangan.jsx
 // Komponen 1 Tugas 3: Formulir Terkendali Tambah Transaksi Keuangan
 import { useState } from 'react';
 
-function FormTransaksi({ onTambahTransaksi }) {
+function FormKeuangan({ onTambahTransaksi }) {
   const [keterangan, setKeterangan] = useState('');
   const [nominal, setNominal] = useState('');
   const [jenis, setJenis] = useState('pemasukan');
@@ -26,42 +26,50 @@ function FormTransaksi({ onTambahTransaksi }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: '16px' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+    <form onSubmit={handleSubmit} className="form-keuangan">
+      {/* Baris 1: Keterangan transaksi */}
+      <div className="input-group">
         <input
-          className="input"
+          className="input input-full"
           type="text"
           placeholder="Keterangan transaksi (misal: Uang Jajan, Beli Buku)"
           value={keterangan}
           onChange={(e) => setKeterangan(e.target.value)}
         />
+      </div>
 
-        <div className="baris">
-          <input
-            className="input"
-            type="number"
-            min="1"
-            placeholder="Nominal (Rp)"
-            value={nominal}
-            onChange={(e) => setNominal(e.target.value)}
-          />
+      {/* Baris 2: Nominal, Jenis, dan Tombol Tambah */}
+      <div className="baris baris-keuangan">
+        <input
+          className="input input-nominal"
+          type="number"
+          min="1"
+          placeholder="Nominal (Rp)"
+          value={nominal}
+          onChange={(e) => setNominal(e.target.value)}
+        />
 
+        <div className="select-wrapper">
           <select
-            className="select"
+            className="select-keuangan"
             value={jenis}
             onChange={(e) => setJenis(e.target.value)}
           >
             <option value="pemasukan">Pemasukan (+)</option>
             <option value="pengeluaran">Pengeluaran (-)</option>
           </select>
-
-          <button className="tombol" type="submit" disabled={tidakValid}>
-            Tambah
-          </button>
         </div>
+
+        <button
+          className="tombol tombol-navy tombol-tambah"
+          type="submit"
+          disabled={tidakValid}
+        >
+          <span style={{ fontSize: '15px', marginRight: '4px', fontWeight: 'bold' }}>+</span> Tambah
+        </button>
       </div>
     </form>
   );
 }
 
-export default FormTransaksi;
+export default FormKeuangan;
