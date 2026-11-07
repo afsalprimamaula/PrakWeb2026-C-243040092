@@ -57,7 +57,7 @@ function RekapKeuangan() {
   return (
     <div className="finance-container">
       <Kartu
-        judul="Catatan Keuangan Mini (Tugas 3)"
+        judul="Catatan Keuangan Mini"
         subjudul="Kelola keuanganmu dengan mudah"
         icon={iconFinance}
         className="kartu-keuangan"
